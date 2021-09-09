@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>2.2. Persistence Diagram Featurization &mdash; teaspoon 0.1.0 documentation</title>
   
@@ -18,10 +18,7 @@
 
   
   
-
   
-  
-
   
 
   
@@ -56,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> teaspoon
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> teaspoon
           
 
           
@@ -181,8 +178,6 @@
 
 
 
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -196,7 +191,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/ML.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -214,11 +209,11 @@
 <h1><span class="section-number">2.2. </span>Persistence Diagram Featurization<a class="headerlink" href="#persistence-diagram-featurization" title="Permalink to this headline">¶</a></h1>
 <p>Persistence diagram can not be directly used in the machine learning algorithms.
 Therefore, there are several methods that are proposed to extract features from persistence diagrams.
-Some these methods are <a class="reference internal" href="F_PD.html#persistence-images"><span class="std std-ref">Persistence Images</span></a><span id="id1">[<a class="reference internal" href="#id9" title="Henry Adams, Tegan Emerson, Michael Kirby, Rachel Neville, Chris Peterson, Patrick Shipman, Sofya Chepushtanova, Eric Hanson, Francis Motta, and Lori Ziegelmeier. Persistence images: a stable vector representation of persistent homology. The Journal of Machine Learning Research, 18(1):218–252, 2017.">1</a>]</span>, <a class="reference internal" href="F_PD.html#carlsson-coordinates"><span class="std std-ref">Carlsson Coordinates</span></a><span id="id2">[<a class="reference internal" href="#id10" title="Aaron Adcock, Erik Carlsson, and Gunnar Carlsson. The ring of algebraic functions on persistence bar codes. Homology, Homotopy and Applications, 18(1):381–402, 2016. doi:10.4310/hha.2016.v18.n1.a21.">2</a>, <a class="reference internal" href="#id16" title="Firas A. Khasawneh, Elizabeth Munch, and Jose A. Perea. Chatter Classification in Turning using Machine Learning and Topological Data Analysis. IFAC-PapersOnLine, 51(14):195–200, 2018. doi:10.1016/j.ifacol.2018.07.222.">6</a>]</span>, <a class="reference internal" href="F_PD.html#persistence-landscapes"><span class="std std-ref">Persistence Landscapes</span></a><span id="id3">[<a class="reference internal" href="#id15" title="Peter Bubenik and Paweł Dłotko. A persistence landscapes toolbox for topological statistics. Journal of Symbolic Computation, 78:91–114, jan 2017. doi:10.1016/j.jsc.2016.03.009.">3</a>]</span>, <a class="reference internal" href="F_PD.html#path-signatures"><span class="std std-ref">Path Signatures</span></a><span id="id4">[<a class="reference internal" href="#id11" title="Ilya Chevyrev and Andrey Kormilitzin. A primer on the signature method in machine learning. arXiv preprint arXiv:1603.03788, 2016.">4</a>, <a class="reference internal" href="#id12" title="Ilya Chevyrev, Vidit Nanda, and Harald Oberhauser. Persistence paths and signature features in topological data analysis. IEEE Transactions on Pattern Analysis and Machine Intelligence, 42(1):192–202, jan 2020. doi:10.1109/tpami.2018.2885516.">5</a>]</span>, and kernel method <span id="id5">[<a class="reference internal" href="#id13" title="Jan Reininghaus, Stefan Huber, Ulrich Bauer, and Roland Kwitt. A stable multi-scale kernel for topological machine learning. In 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR). IEEE, jun 2015. doi:10.1109/cvpr.2015.7299106.">8</a>]</span>.
+Some these methods are <a class="reference internal" href="F_PD.html#persistence-images"><span class="std std-ref">Persistence Images</span></a><a class="bibtex reference internal" href="#adams2017" id="id1">[1]</a>, <a class="reference internal" href="F_PD.html#carlsson-coordinates"><span class="std std-ref">Carlsson Coordinates</span></a><a class="bibtex reference internal" href="#adcock2016" id="id2">[2]</a><a class="bibtex reference internal" href="#khasawneh2018" id="id3">[6]</a>, <a class="reference internal" href="F_PD.html#persistence-landscapes"><span class="std std-ref">Persistence Landscapes</span></a><a class="bibtex reference internal" href="#bubenik2017" id="id4">[3]</a>, <a class="reference internal" href="F_PD.html#path-signatures"><span class="std std-ref">Path Signatures</span></a><a class="bibtex reference internal" href="#chevyrev2016" id="id5">[4]</a><a class="bibtex reference internal" href="#chevyrev2020" id="id6">[5]</a>, and kernel method <a class="bibtex reference internal" href="#reininghaus2015" id="id7">[8]</a>.
 In this toolbox, we provide the documentation for the codes of these five methods.
 We used these methods to extract features from persistence diagrams of cutting signals to diagnose chatter in machining.
-Our data set is available in Ref. <span id="id6">[<a class="reference internal" href="#id17" title="Firas A. Khasawneh, Andreas Otto, and Melih C. Yesilli. Turning dataset for chatter diagnosis using machine learning. 2019. doi:10.17632/HVM4WH3JZX.1.">7</a>]</span>.
-One can refer to <span id="id7">[<a class="reference internal" href="#id14" title="Melih C. Yesilli, Firas A. Khasawneh, and Andreas Otto. Topological feature vectors for chatter detection in turning processes. arXiv preprint arXiv:1905.08671, 2019.">9</a>]</span> for more details.</p>
+Our data set is available in Ref. <a class="bibtex reference internal" href="#khasawneh2019" id="id8">[7]</a>.
+One can refer to <a class="bibtex reference internal" href="#yesilli2019" id="id9">[9]</a> for more details.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="F_PD.html">2.2.1. Featurization</a><ul>
@@ -235,7 +230,7 @@ One can refer to <span id="id7">[<a class="reference internal" href="#id14" titl
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="CL.html">2.2.2. Classification</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="CL.html#module-teaspoon.ML.PD_Classification">2.2.2.1. Persistence Landscapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CL.html#persistence-landscapes">2.2.2.1. Persistence Landscapes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CL.html#parameter-bucket-for-classification">2.2.2.2. Parameter Bucket for Classification</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CL.html#persistence-images">2.2.2.3. Persistence Images</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CL.html#carlsson-coordinates">2.2.2.4. Carlsson Coordinates</a></li>
@@ -247,32 +242,32 @@ One can refer to <span id="id7">[<a class="reference internal" href="#id14" titl
 </div>
 <div class="section" id="references">
 <h2><span class="section-number">2.2.3. </span>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<p id="id8"><dl class="citation">
-<dt class="label" id="id9"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<p id="bibtex-bibliography-ML-0"><dl class="citation">
+<dt class="bibtex label" id="adams2017"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>Henry Adams, Tegan Emerson, Michael Kirby, Rachel Neville, Chris Peterson, Patrick Shipman, Sofya Chepushtanova, Eric Hanson, Francis Motta, and Lori Ziegelmeier. Persistence images: a stable vector representation of persistent homology. <em>The Journal of Machine Learning Research</em>, 18(1):218–252, 2017.</p>
 </dd>
-<dt class="label" id="id10"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dt class="bibtex label" id="adcock2016"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
 <dd><p>Aaron Adcock, Erik Carlsson, and Gunnar Carlsson. The ring of algebraic functions on persistence bar codes. <em>Homology, Homotopy and Applications</em>, 18(1):381–402, 2016. <a class="reference external" href="https://doi.org/10.4310/hha.2016.v18.n1.a21">doi:10.4310/hha.2016.v18.n1.a21</a>.</p>
 </dd>
-<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dt class="bibtex label" id="bubenik2017"><span class="brackets"><a class="fn-backref" href="#id4">3</a></span></dt>
 <dd><p>Peter Bubenik and Paweł Dłotko. A persistence landscapes toolbox for topological statistics. <em>Journal of Symbolic Computation</em>, 78:91–114, jan 2017. <a class="reference external" href="https://doi.org/10.1016/j.jsc.2016.03.009">doi:10.1016/j.jsc.2016.03.009</a>.</p>
 </dd>
-<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dt class="bibtex label" id="chevyrev2016"><span class="brackets"><a class="fn-backref" href="#id5">4</a></span></dt>
 <dd><p>Ilya Chevyrev and Andrey Kormilitzin. A primer on the signature method in machine learning. <em>arXiv preprint arXiv:1603.03788</em>, 2016.</p>
 </dd>
-<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id4">5</a></span></dt>
+<dt class="bibtex label" id="chevyrev2020"><span class="brackets"><a class="fn-backref" href="#id6">5</a></span></dt>
 <dd><p>Ilya Chevyrev, Vidit Nanda, and Harald Oberhauser. Persistence paths and signature features in topological data analysis. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 42(1):192–202, jan 2020. <a class="reference external" href="https://doi.org/10.1109/tpami.2018.2885516">doi:10.1109/tpami.2018.2885516</a>.</p>
 </dd>
-<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id2">6</a></span></dt>
+<dt class="bibtex label" id="khasawneh2018"><span class="brackets"><a class="fn-backref" href="#id3">6</a></span></dt>
 <dd><p>Firas A. Khasawneh, Elizabeth Munch, and Jose A. Perea. Chatter Classification in Turning using Machine Learning and Topological Data Analysis. <em>IFAC-PapersOnLine</em>, 51(14):195–200, 2018. <a class="reference external" href="https://doi.org/10.1016/j.ifacol.2018.07.222">doi:10.1016/j.ifacol.2018.07.222</a>.</p>
 </dd>
-<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id6">7</a></span></dt>
+<dt class="bibtex label" id="khasawneh2019"><span class="brackets"><a class="fn-backref" href="#id8">7</a></span></dt>
 <dd><p>Firas A. Khasawneh, Andreas Otto, and Melih C. Yesilli. Turning dataset for chatter diagnosis using machine learning. 2019. <a class="reference external" href="https://doi.org/10.17632/HVM4WH3JZX.1">doi:10.17632/HVM4WH3JZX.1</a>.</p>
 </dd>
-<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id5">8</a></span></dt>
+<dt class="bibtex label" id="reininghaus2015"><span class="brackets"><a class="fn-backref" href="#id7">8</a></span></dt>
 <dd><p>Jan Reininghaus, Stefan Huber, Ulrich Bauer, and Roland Kwitt. A stable multi-scale kernel for topological machine learning. In <em>2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>. IEEE, jun 2015. <a class="reference external" href="https://doi.org/10.1109/cvpr.2015.7299106">doi:10.1109/cvpr.2015.7299106</a>.</p>
 </dd>
-<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id7">9</a></span></dt>
+<dt class="bibtex label" id="yesilli2019"><span class="brackets"><a class="fn-backref" href="#id9">9</a></span></dt>
 <dd><p>Melih C. Yesilli, Firas A. Khasawneh, and Andreas Otto. Topological feature vectors for chatter detection in turning processes. <em>arXiv preprint arXiv:1905.08671</em>, 2019.</p>
 </dd>
 </dl>
@@ -285,29 +280,37 @@ One can refer to <span id="id7">[<a class="reference internal" href="#id14" titl
            
           </div>
           <footer>
+  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="F_PD.html" class="btn btn-neutral float-right" title="2.2.1. Featurization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="FNN.html" class="btn btn-neutral float-left" title="2.1.6. False Nearest Neighbors (FNN) for dimension (n)." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+        <a href="F_PD.html" class="btn btn-neutral float-right" title="2.2.1. Featurization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="FNN.html" class="btn btn-neutral float-left" title="2.1.6. False Nearest Neighbors (FNN) for dimension (n)." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, Munch.
+        
+        &copy; Copyright 2020, Munch
 
     </p>
   </div>
     
     
     
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
+
         </div>
       </div>
 
@@ -333,7 +336,6 @@ One can refer to <span id="id7">[<a class="reference internal" href="#id14" titl
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-XXXXXXX-1', 'auto');
-    
     ga('send', 'pageview');
     </script>
 
